@@ -1,0 +1,75 @@
+/* Resetando margens e padding padrão */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	text-align: center;
+	color: #333;
+}
+
+/* Estilo para o contador (canto superior esquerdo) */
+.counter {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	font-size: 1.5rem;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+/* Container principal */
+.container {
+	background-color: white;
+	padding: 30px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	max-width: 600px;
+	width: 100%;
+}
+
+/* Estilo da mensagem de boas-vindas */
+.welcome-message {
+	font-size: 2.5rem;
+	color: #6a5acd;
+	margin-bottom: 20px;
+}
+
+/* Estilo da descrição */
+.description {
+	font-size: 1.2rem;
+	color: #555;
+	line-height: 1.6;
+}
+
+/* Estilo do botão */
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.1em;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+button:hover {
+	background-color: #45a049;
+}
+
+/* Estilo do cabeçalho */
+h1 {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 700;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Boas-vindas do Claudio</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+	<div id="counter" class="counter">Visitas: 0</div>
+
+	<div class="container">
+    	<h1 class="welcome-message">Bem-vindo ao Flask do Claudio!</h1>
+    	<p class="description">Estamos felizes em tê-lo aqui. Explore a aplicação e divirta-se!</p>
+
+    
+    	<button onclick="incrementCounter()">Clique para aumentar o contador</button>
+	</div>
+
+	
+	<script>
+     
+        let visitas = localStorage.getItem("visitas") ? parseInt(localStorage.getItem("visitas")) : 0;
+
+        
+        function updateCounter() {
+            document.getElementById("counter").innerText = "Visitas: " + visitas;
+        }
+
+      
+        function incrementCounter() {
+            visitas++;
+            localStorage.setItem("visitas", visitas); 
+            updateCounter();  
+        }
+
+      
+        window.onload = updateCounter;
+	</script>
+</body>
+</html>
